@@ -1,0 +1,25 @@
+
+1. Los usuarios van a poder registrarse en la plataforma, y necesitamos almacenar su nombre, email y dirección.
+
+2. La plataforma nos debe permitir poder asignar un rol a los usuarios registrados.
+
+3. Los usuarios con un rol, deben poder guardar información sobre su biografía, título y website en un perfil para creadores.
+
+4. Los usuarios con el rol de editor van a poder escribir posts.
+
+5. la información que debes almacenar sobre los posts es categoría, título, body y una o más etiquetas.
+
+6.Los post van a poder ser comentados, y debemos poder almacenar el mensaje, así como el nombre de la persona que lo escribió.
+
+7. Las personas con el rol de player van a poder subir videos.
+
+8.Lo que debemos almacenar del video es el título del video, descripción, la url donde está almacenada, y etiquetas las cuales 
+pueden ser uno o más.
+
+9. Los videos van a poder ser comentados, y debemos poder almacenar tanto el mensaje como el nombre de la persona que lo escribió.
+
+10. Las etiquetas que se utilicen tanto para los posts como para los videos, deben sacarlo de una lista de etiquetas ya definidas.
+
+11.El usuario debe poder subir una imagen como foto de perfil de manera opcional.
+
+12. Se puede subir una imagen de portada de manera opcional. 

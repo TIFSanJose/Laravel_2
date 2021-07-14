@@ -58,4 +58,27 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+// one to one  User < 1--1 Domicilio
+    public function domicilio(){
+        return $this->hasOne(Domicilio::class);
+    }
+// one to one  User < 1--1 Perfil
+    public function perfil(){
+        return $this->hasOne(Perfil::class);
+    }
+// one to many  User < 1--* Post
+    public function posts(){
+        return $this->hasMany(Post::class);
+    }
+
+// many to many User < *--* Rol    
+    public function roles(){
+        return $this->belongsToMany(Role::class);
+    }
+
+// many to many User < *--* Video    
+    public function videos(){
+        return $this->belongsToMany(Video::class);
+    }
+
 }
