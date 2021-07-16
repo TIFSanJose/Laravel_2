@@ -16,4 +16,10 @@ class Post extends Model
     public function categoria(){
         return $this->belongsTo(Categoria::class);
     }
+
+// one to one Polimorfica User 1--1 Image 1--1 > Post
+    public function image(){
+        return $this->morphOne(Image::class, 'imageable');
+    }
+
 }

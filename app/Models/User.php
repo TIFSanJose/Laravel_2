@@ -81,4 +81,9 @@ class User extends Authenticatable
         return $this->belongsToMany(Video::class);
     }
 
+// one to one Polimorfica User < 1--1 Image 1--1 Post
+    public function image(){
+        return $this->morphOne(Image::class, 'imageable');
+    }
+
 }
