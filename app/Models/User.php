@@ -71,6 +71,12 @@ class User extends Authenticatable
         return $this->hasMany(Post::class);
     }
 
+    // one to many  User < 1--* Comentario
+    public function comentarios(){
+        return $this->hasMany(Comentario::class);
+    }
+
+
 // many to many User < *--* Rol    
     public function roles(){
         return $this->belongsToMany(Role::class);

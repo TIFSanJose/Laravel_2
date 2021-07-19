@@ -22,4 +22,10 @@ class Post extends Model
         return $this->morphOne(Image::class, 'imageable');
     }
 
+// one to Many Polimorfica Posts < 1--* Comentarios *--1 Videos
+    public function comentarios()
+    {
+        return $this->morphMany(Comentario::class, 'comentarioable');
+    }
+
 }
