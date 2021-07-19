@@ -27,5 +27,8 @@ class Post extends Model
     {
         return $this->morphMany(Comentario::class, 'comentarioable');
     }
-
+// many to many Polimorfica Video <1--* Taggables *--1 Tag
+    public function tags(){
+        return $this->morphToMany(Tag::class, 'taggable');
+    }    
 }
